@@ -1,1 +1,12 @@
-#rip
+import yfinance as yf
+
+# declaring start and end times for the dates of our databases
+start = datetime.datetime(1980, 12, 12)
+end = datetime.datetime(2023, 12, 31)
+
+# pulling data from yahoo finance databases for Apple and its competitors
+apple = yf.download("AAPL", start, end)
+samsung = yf.download("SSNLF", start, end)
+hp = yf.download("HPQ", start, end)
+lenovo = yf.download("LNVGY", start, end)
+dell = yf.download("DVMT", start, end)
