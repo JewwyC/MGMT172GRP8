@@ -10,3 +10,10 @@ samsung = yf.download("SSNLF", start, end)
 hp = yf.download("HPQ", start, end)
 lenovo = yf.download("LNVGY", start, end)
 dell = yf.download("DVMT", start, end)
+
+# creating dataframes for Apple and competitors
+appl = pd.DataFrame(apple)
+smsng = pd.DataFrame(samsung)
+hp = pd.DataFrame(hpq)
+lnv = pd.DataFrame(lenovo)
+dll = pd.DataFrame(dell)
